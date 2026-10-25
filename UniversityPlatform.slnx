@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="UniversitPlatform.Domain/UniversitPlatform.Domain.csproj" />
+  <Project Path="UniversityPlatform.Infrastructure/UniversityPlatform.Infrastructure.csproj" />
   <Project Path="UniversityPlatform/UniversityPlatform.csproj" />
+  <Project Path="UniversityPlatoform.Application/UniversityPlatoform.Application.csproj" />
 </Solution>
