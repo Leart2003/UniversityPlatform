@@ -1,2 +1,23 @@
 <Solution>
+  <Project Path="src/ApiGateway/ApiGateway.csproj" />
+  <Project Path="src/CourseService/CourseService.Api/CourseService.Api.csproj" />
+  <Project Path="src/CourseService/CourseService.Application/CourseService.Application.csproj" />
+  <Project Path="src/CourseService/CourseService.Domain/CourseService.Domain.csproj" />
+  <Project Path="src/CourseService/CourseService.Infrastructure/CourseService.Infrastructure.csproj" />
+  <Project Path="src/ExamService/ExamService.Api/ExamService.Api.csproj" />
+  <Project Path="src/ExamService/ExamService.Application/ExamService.Application.csproj" />
+  <Project Path="src/ExamService/ExamService.Domain/ExamService.Domain.csproj" />
+  <Project Path="src/ExamService/ExamService.Infrastructure/ExamService.Infrastructure.csproj" />
+  <Project Path="src/LoginService/LoginService.Api/LoginService.Api.csproj" />
+  <Project Path="src/LoginService/LoginService.Application/LoginService.Application.csproj" />
+  <Project Path="src/LoginService/LoginService.Domain/LoginService.Domain.csproj" />
+  <Project Path="src/LoginService/LoginService.Infrastructure/LoginService.Infrastructure.csproj" />
+  <Project Path="src/NotificationService/NotificationService.Api/NotificationService.Api.csproj" />
+  <Project Path="src/NotificationService/NotificationService.Application/NotificationService.Application.csproj" />
+  <Project Path="src/NotificationService/NotificationService.Domain/NotificationService.Domain.csproj" />
+  <Project Path="src/NotificationService/NotificationService.Infrastructure/NotificationService.Infrastructure.csproj" />
+  <Project Path="src/StudentService/StudentService.Api/StudentService.Api.csproj" />
+  <Project Path="src/StudentService/StudentService.Application/StudentService.Application.csproj" />
+  <Project Path="src/StudentService/StudentService.Domain/StudentService.Domain.csproj" />
+  <Project Path="src/StudentService/StudentService.Infrastructure/StudentService.Infrastructure.csproj" />
 </Solution>
