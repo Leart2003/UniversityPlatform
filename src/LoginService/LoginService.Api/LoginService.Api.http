@@ -1,0 +1,11 @@
+@LoginService.Api_HostAddress = http://localhost:5009
+
+GET {{LoginService.Api_HostAddress}}/openapi/v1.json
+Accept: application/json
+
+###
+
+GET {{LoginService.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

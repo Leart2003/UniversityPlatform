@@ -1,0 +1,11 @@
+@ExamService.Api_HostAddress = http://localhost:5171
+
+GET {{ExamService.Api_HostAddress}}/openapi/v1.json
+Accept: application/json
+
+###
+
+GET {{ExamService.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

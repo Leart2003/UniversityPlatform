@@ -1,0 +1,11 @@
+@CourseService.Api_HostAddress = http://localhost:5174
+
+GET {{CourseService.Api_HostAddress}}/openapi/v1.json
+Accept: application/json
+
+###
+
+GET {{CourseService.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
