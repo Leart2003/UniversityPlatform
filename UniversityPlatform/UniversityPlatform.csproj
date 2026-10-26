@@ -14,4 +14,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UniversityPlatform.Infrastructure\UniversityPlatform.Infrastructure.csproj" />
+    <ProjectReference Include="..\UniversityPlatoform.Application\UniversityPlatoform.Application.csproj" />
+  </ItemGroup>
+
 </Project>
