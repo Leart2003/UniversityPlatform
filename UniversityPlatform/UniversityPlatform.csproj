@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UniversityPlatform.Infrastructure\UniversityPlatform.Infrastructure.csproj" />
-    <ProjectReference Include="..\UniversityPlatoform.Application\UniversityPlatoform.Application.csproj" />
+    <ProjectReference Include="..\UniversityPlatoform.Application\UniversityPlatform.Application.csproj" />
   </ItemGroup>
 
 </Project>

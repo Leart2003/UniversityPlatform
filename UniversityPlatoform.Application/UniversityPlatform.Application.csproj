@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UniversitPlatform.Domain\UniversitPlatform.Domain.csproj" />
-    <ProjectReference Include="..\UniversityPlatoform.Application\UniversityPlatoform.Application.csproj" />
+    <ProjectReference Include="..\UniversitPlatform.Domain\UniversityPlatform.Domain.csproj" />
   </ItemGroup>
 
 </Project>
