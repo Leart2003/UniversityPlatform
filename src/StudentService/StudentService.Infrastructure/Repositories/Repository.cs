@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StudentService.Application;
 using StudentService.Application.Interfaces;
-using StudentService.Domain.Entites;
 using StudentService.Domain.Entities;
 using StudentService.Infrastructure.Data;
 

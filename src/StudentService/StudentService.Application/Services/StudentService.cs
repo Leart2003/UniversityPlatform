@@ -1,6 +1,5 @@
 ﻿using StudentService.Application.DTOs;
 using StudentService.Application.Interfaces;
-using StudentService.Domain.Entites;
 using StudentService.Domain.Entities;
 
 namespace StudentService.Application.Services;

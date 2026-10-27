@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StudentService.Domain.Entites
+namespace StudentService.Domain.Entities
 {
-    public abstract class  BaseEntity
+    public abstract class BaseEntity
     {
         public int Id { get; set; }
     }

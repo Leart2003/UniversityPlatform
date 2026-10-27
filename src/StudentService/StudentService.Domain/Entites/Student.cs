@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StudentService.Domain.Entites
+namespace StudentService.Domain.Entities
 {
     public class Student : BaseEntity
     {

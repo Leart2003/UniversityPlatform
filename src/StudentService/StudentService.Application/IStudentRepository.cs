@@ -1,4 +1,4 @@
-﻿using StudentService.Domain.Entites;
+﻿using StudentService.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

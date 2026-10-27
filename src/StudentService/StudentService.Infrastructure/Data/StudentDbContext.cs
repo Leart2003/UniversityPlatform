@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using StudentService.Domain.Entites;
-
+using StudentService.Domain.Entities;
 
 namespace StudentService.Infrastructure.Data;
 
