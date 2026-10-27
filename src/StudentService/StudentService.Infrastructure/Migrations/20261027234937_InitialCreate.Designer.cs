@@ -11,7 +11,7 @@ using StudentService.Infrastructure.Data;
 namespace StudentService.Infrastructure.Migrations
 {
     [DbContext(typeof(StudentDbContext))]
-    [Migration("20261027233013_InitialCreate")]
+    [Migration("20261027234937_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
