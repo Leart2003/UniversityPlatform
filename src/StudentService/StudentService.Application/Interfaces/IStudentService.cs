@@ -1,8 +1,10 @@
-﻿using System;
+﻿using StudentService.Application.DTOs;
 
-public class Class1
+namespace StudentService.Application.Interfaces;
+
+public interface IStudentService
 {
-	public Class1()
-	{
-	}
+    Task<StudentDto?> GetByIdAsync(int id);
+    Task<List<StudentDto>> GetAllAsync();
+    Task<StudentDto> CreateAsync(CreateStudentDto dto);
 }
