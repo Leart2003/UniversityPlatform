@@ -1,7 +1,6 @@
 using CourseService.Application.Interfaces;
 using CourseService.Application.Services;
 using CourseService.Infrastructure;
-using LoginService.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\LoginService\LoginService.Infrastructure\LoginService.Infrastructure.csproj" />
     <ProjectReference Include="..\CourseService.Application\CourseService.Application.csproj" />
     <ProjectReference Include="..\CourseService.Infrastructure\CourseService.Infrastructure.csproj" />
   </ItemGroup>

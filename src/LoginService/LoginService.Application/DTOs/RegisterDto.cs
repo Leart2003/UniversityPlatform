@@ -4,7 +4,7 @@ namespace LoginService.Application.DTOs;
 
 public class RegisterDto
 {
-    [Required, EmailAddress]
+    [Required, EmailAddress, MaxLength(100)]
     public string Email { get; set; } = string.Empty;
 
     [Required, MinLength(6)]

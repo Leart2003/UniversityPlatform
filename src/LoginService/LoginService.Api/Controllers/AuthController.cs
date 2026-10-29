@@ -15,6 +15,17 @@ public class AuthController : ControllerBase
         _authService = authService;
     }
 
+    [HttpGet("users")]
+    public async Task<ActionResult<List<UserDto>>> GetAllUsers()
+        => Ok(await _authService.GetAllAsync());
+
+    [HttpGet("users/{id:int}")]
+    public async Task<ActionResult<UserDto>> GetUserById(int id)
+    {
+        var user = await _authService.GetByIdAsync(id);
+        return user is null ? NotFound() : Ok(user);
+    }
+
     [HttpPost("register")]
     public async Task<ActionResult<UserDto>> Register(RegisterDto dto)
     {

@@ -31,15 +31,16 @@ public class CourseManager : ICourseService
 
     public async Task<CourseDto> CreateAsync(CreateCourseDto dto)
     {
-        var existing = await _courseRepository.GetByCodeAsync(dto.Code);
+        var code = dto.Code.Trim().ToUpperInvariant();
+        var existing = await _courseRepository.GetByCodeAsync(code);
         if (existing != null)
             throw new InvalidOperationException("A course with this code already exists.");
 
         var course = new Course
         {
-            Code = dto.Code,
-            Title = dto.Title,
-            Description = dto.Description,
+            Code = code,
+            Title = dto.Title.Trim(),
+            Description = dto.Description.Trim(),
             Credits = dto.Credits,
             ProfessorId = dto.ProfessorId
         };
@@ -50,17 +51,18 @@ public class CourseManager : ICourseService
 
     public async Task<CourseDto?> UpdateAsync(int id, UpdateCourseDto dto)
     {
+        var code = dto.Code.Trim().ToUpperInvariant();
         var course = await _courseRepository.GetByIdAsync(id);
         if (course == null)
             return null;
 
-        var sameCode = await _courseRepository.GetByCodeAsync(dto.Code);
+        var sameCode = await _courseRepository.GetByCodeAsync(code);
         if (sameCode != null && sameCode.Id != id)
             throw new InvalidOperationException("A course with this code already exists.");
 
-        course.Code = dto.Code;
-        course.Title = dto.Title;
-        course.Description = dto.Description;
+        course.Code = code;
+        course.Title = dto.Title.Trim();
+        course.Description = dto.Description.Trim();
         course.Credits = dto.Credits;
         course.ProfessorId = dto.ProfessorId;
 

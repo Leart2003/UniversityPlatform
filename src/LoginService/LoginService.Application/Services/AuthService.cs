@@ -16,6 +16,18 @@ public class AuthService : IAuthService
         _passwordHasher = passwordHasher;
     }
 
+    public async Task<UserDto?> GetByIdAsync(int id)
+    {
+        var user = await _userRepository.GetByIdAsync(id);
+        return user is null ? null : MapToDto(user);
+    }
+
+    public async Task<List<UserDto>> GetAllAsync()
+    {
+        var users = await _userRepository.GetAllAsync();
+        return users.Select(MapToDto).ToList();
+    }
+
     public async Task<UserDto> RegisterAsync(RegisterDto dto)
     {
         var email = dto.Email.Trim().ToLowerInvariant();
