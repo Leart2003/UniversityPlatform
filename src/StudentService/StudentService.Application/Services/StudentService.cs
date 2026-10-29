@@ -27,16 +27,23 @@ public class StudentService : IStudentService
 
     public async Task<StudentDto> CreateAsync(CreateStudentDto dto)
     {
-        var existing = await _repository.GetByEmailAsync(dto.Email);
+        var email = dto.Email.Trim().ToLowerInvariant();
+        var studentNumber = dto.StudentNumber.Trim();
+
+        var existing = await _repository.GetByEmailAsync(email);
         if (existing != null)
             throw new InvalidOperationException("A student with this email already exists.");
 
+        existing = await _repository.GetByStudentNumberAsync(studentNumber);
+        if (existing != null)
+            throw new InvalidOperationException("A student with this student number already exists.");
+
         var student = new Student
         {
-            FirstName = dto.FirstName,
-            LastName = dto.LastName,
-            Email = dto.Email,
-            StudentNumber = dto.StudentNumber
+            FirstName = dto.FirstName.Trim(),
+            LastName = dto.LastName.Trim(),
+            Email = email,
+            StudentNumber = studentNumber
         };
 
         await _repository.AddAsync(student);
